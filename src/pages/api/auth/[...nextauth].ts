@@ -1,4 +1,8 @@
-import { authOptions } from "@/utils/auth";
-import NextAuth from "next-auth";
+function greet(name: string): string {
+  return `Hello, ${name}!`
+}
 
-export default NextAuth(authOptions);
+const personName = 'John'
+const greeting = greet(personName)
+
+console.log(greeting)
